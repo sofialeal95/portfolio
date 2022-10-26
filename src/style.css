@@ -1,11 +1,16 @@
-body {
-  background-color: #2b2b28;
-  color: #ebebe3;
-  font-family: "Arimo", sans-serif;
+:root {
+  --main-color: #ebebe3;
+  --dark-color: #2b2b28;
+  --emphasis: #c19898;
+  --light-emphasis: #4a4a48;
+  --main-font-family: "Arimo", sans-serif;
+  --cursive: "Libre Baskerville", serif;
 }
 
-em {
-  font-family: "Libre Baskerville", serif;
+body {
+  background-color: var(--dark-color);
+  color: var(--main-color);
+  font-family: var(--main-font-family);
 }
 
 h1 {
@@ -13,7 +18,7 @@ h1 {
 }
 
 h2 {
-  color: #c19898;
+  color: var(--emphasis);
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -23,7 +28,51 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .main-content {
   margin: 50px auto;
   max-width: 800px;
+}
+
+.cursive {
+  font-family: var(--cursive);
+}
+
+.light-emphasis {
+  background-color: var(--light-emphasis);
+}
+
+.hero {
+  margin: 200px 0;
+}
+
+.hero p {
+  font-size: 25px;
+}
+
+@media (max-width: 575px) {
+  body {
+    text-align: center;
+  }
+
+  img {
+    max-width: 200px;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.2;
+  }
+
+  .hero {
+    margin: 50px 0;
+  }
+
+  .light-emphasis {
+    background-color: inherit;
+  }
 }
