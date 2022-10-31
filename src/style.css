@@ -19,8 +19,8 @@ h1 {
 
 h2 {
   color: var(--emphasis);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 p {
@@ -33,9 +33,13 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: var(--emphasis);
+}
+
 .main-content {
   margin: 50px auto;
-  max-width: 800px;
+  max-width: 1500px;
 }
 
 .cursive {
@@ -44,19 +48,42 @@ a {
 
 .light-emphasis {
   background-color: var(--light-emphasis);
+  text-align: center;
 }
 
 .hero {
-  margin: 200px 0;
+  margin: 200px auto;
+  max-width: 800px;
 }
 
 .hero p {
   font-size: 25px;
 }
 
+.col-sm-6 h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.col-sm-6 h5 {
+  font-size: 50px;
+}
+
+.for-mobile {
+  display: none;
+}
+
+.for-desktop {
+  display: flex;
+}
+
 @media (max-width: 575px) {
   body {
     text-align: center;
+  }
+
+  .col-sm-6 h5 {
+    font-size: 40px;
   }
 
   img {
@@ -74,5 +101,13 @@ a {
 
   .light-emphasis {
     background-color: inherit;
+  }
+
+  .for-mobile {
+    display: flex;
+  }
+
+  .for-desktop {
+    display: none;
   }
 }
