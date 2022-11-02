@@ -2,7 +2,7 @@
   --main-color: #ebebe3;
   --dark-color: #2b2b28;
   --emphasis: #c19898;
-  --light-emphasis: #4a4a48;
+  --light-emphasis: #4a4a4846;
   --main-font-family: "Arimo", sans-serif;
   --cursive: "Libre Baskerville", serif;
 }
@@ -25,6 +25,7 @@ h2 {
 
 h3 {
   color: var(--emphasis);
+  margin: 3rem 0;
 }
 
 p {
@@ -38,6 +39,20 @@ a {
 }
 
 a:hover {
+  color: var(--emphasis);
+}
+
+.logo {
+  max-height: 45px;
+}
+
+.nav-link {
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+}
+
+.nav-link:hover,
+.navbar-nav .nav-link.active {
   color: var(--emphasis);
 }
 
@@ -82,7 +97,7 @@ a:hover {
   display: flex;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   body {
     text-align: center;
   }
@@ -92,8 +107,11 @@ a:hover {
   }
 
   img {
-    max-width: 100px;
     text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 0px !important;
   }
 
   p {
