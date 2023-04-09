@@ -61,8 +61,7 @@ a:hover {
 }
 
 .light-emphasis {
-  background-color: var(--light-emphasis);
-  text-align: center;
+  text-align: right;
 }
 
 .main-content,
@@ -79,6 +78,15 @@ a:hover {
 
 .main-content .hero h2 {
   font-size: 25px;
+}
+
+.project-desc-r {
+  margin: auto 0;
+}
+
+.project-desc-l {
+  margin: auto 0;
+  text-align: right;
 }
 
 .col-sm-6 h4 {
